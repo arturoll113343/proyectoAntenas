@@ -1,0 +1,332 @@
+body{
+  font-family: cursive;
+  background-color: #e9b2d0;
+}
+
+fieldset{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 2px solid #911258;
+}
+
+
+.img_linea{
+  flex: 1;
+  max-width: 60%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexBox{ /* definición del header como un flexbox - container */
+  margin :auto;
+  width: 100%;
+  height: auto;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  background-color: white;
+  opacity: 90%;
+  color: #251291;
+  border: .5px solid #251291 ;
+}
+
+.imagenpoli,.imagenupiita,.Logos{
+  margin: 4px;
+  padding: 5px;
+  border-radius: 7pt; 
+  height: 100px;
+}
+
+.imagenpoli{ -webkit-order: 1; order: 1;}
+.imagenupiita{ -webkit-order: 3; order: 3;}
+
+@media screen and (max-width:800px){
+  .Logos_gobierno{
+    width: 50%;
+    height: 50%;
+  }
+  .imagenpoli,.imagenupiita{
+    height: 70px;
+  }
+}
+
+
+.titulos{
+text-align: center;
+font-weight: 900;
+color: black;
+margin :auto;
+width: 100%;
+height: auto;
+
+
+border: 2px solid#911258;
+
+
+  /* color: -webkit-linear-gradient(right, #002b44, #02161b); */
+}
+
+@media screen and (min-width:601px){
+  .titulos{
+    font-size: 100%;
+  }
+}
+@media screen and (max-width:600px){
+  .titulos{
+    font-size: 80%;
+  }
+}
+
+.titulo{
+  margin :auto;
+  width: 100%;
+  height: auto;
+  border: 2px solid#251291;
+  background-color: #a5a5a5;
+  opacity: 90%;
+  text-align: center;
+}
+
+.titulo_reg{
+  text-align: center;
+  padding: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width:601px){
+  .titulo{
+    font-size: 100%;
+  }
+ 
+}
+@media screen and (max-width:600px){
+  .titulo{
+    font-size: 80%;
+  }
+  
+}
+
+optgroup {
+  cursor:pointer;
+  width: 100%;
+  position:relative;
+  font-size: 20px;
+  color:black;
+  border:1px solid #ccc;
+}
+
+.Formulario{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 20px;
+
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.7);
+  position: relative;
+  
+}
+
+.formulario_select{
+  width: 100%;
+  flex: 1;
+}
+
+.formulario_select_medidas{
+  width: 90%;
+  flex: 1;
+  margin-left: 10%;
+}
+.formulario_select_medidas_frecuencia{
+  width: 90%;
+  flex: 1;
+  margin-left: 10%;
+}
+.formulario_dielectricos_in{
+  width: 80%;
+  flex: 1;
+  margin-left: 10%;
+}
+.formulario_dielectricos{
+  display:flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  
+}
+.formulario_input{
+  display:flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+ 
+}
+.formulario_label{
+  display:flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 90%;
+ 
+}
+.formulario_label_dielectrico{
+  display:flex;
+  margin-left: 10%;
+  width: 100%;
+  font-size: 15px;
+}
+
+.formulario_label_medidas{
+  display:flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: 10%;
+  width: 100%;
+  font-size: 13px;
+}
+
+.formulario_medidas{
+  display:flex;
+  box-sizing: border-box;
+  flex-direction: center;
+  width: 100%;
+  font-size: 13px;
+ 
+}
+
+.formulario_dielectricos_in,.formulario_select_medidas_frecuencia,.formulario_select_medidas,.formulario_medidas,.formulario_dielectricos,.formulario_input,.formulario_select,.formulario_option{
+  padding:10px;
+  background: rgba(79, 86, 150, 0.2);
+  border: 1px solid rgba(2, 25, 228, 0.3);
+  margin-bottom: 75px;
+  border-radius: 3px;
+}
+.formulario_label,.formulario_label_medidas,.formulario_label_dielectrico{
+  font-size: medium;
+  
+  z-index:-20; 
+  transition: all 0.2s;
+}
+
+.formulario_dielectricos_in:focus,.formulario_select_medidas_frecuencia:focus,.formulario_select_medidas:focus,.formulario_medidas:focus,.formulario_input:focus,.formulario_select:focus{
+  outline: 3px solid rgba(0, 0, 0, 0.7);
+}
+.formulario_input_error{
+  padding: 0 0 30px 0;
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-left: 10px;
+  display: none;
+}
+
+.formulario_input_error-activo{
+  display:block;
+}
+/*
+.formulario_input:focus+.formulario_label{
+  padding: 5px;
+  margin-top:-120px;  MODIFICAR PARA QUE FUNCIONE BIEN
+  font-size:large;
+}*/
+
+ .formulario_label,.formulario_label_medidas,.formulario_label_dielectrico{
+   /*Codigo si no funciona la animacion de los inputs*/
+  font-size:large;
+} 
+
+.formulario__mensaje{
+  height: 45px;
+  line-height: 45px;
+  background: #251291;
+  padding: 0 15px;
+  border-radius: 3px ;
+  width: 70%;
+  display: none;
+}
+.formulario__mensaje-activo{
+  display: block;
+}
+
+.Seleccion_lineas{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.Seleccion_lineas >div{
+  width: 100%;
+}
+
+.tipo_de_linea{
+  display: block;
+  font-size: large;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Fijar{ /*Clase para que cuando no este vacio se ejecute la accion*/
+  margin-top:-115px;
+  font-size:large;
+}
+
+.enviar_info >button{
+  text-align: center;
+  font-size: medium;
+  font-weight: 1000;
+  align-items: center;
+  background: #911258;
+  width: 100%;
+  border: 1px solid #f5f5f5;
+  border-radius: 7px;
+  margin-bottom: 20;
+  padding: 15px;
+  color: #ded2ff;
+}
+
+.enviar_info_inicio{
+text-align:center;
+}
+.enviar_info_inicio > a{
+  font-size: large;
+  font-weight: 900;
+  align-items: center;
+  background: #251291;
+  width: 100%;
+  border: 1px solid #f5f5f5;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #f5f5f5;
+text-align:center;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+
+/*Estilos para validacion*/
+.formulario_grupo-incorrecto .formulario_label{
+  color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .formulario_input{
+  border: 3px solid #bb2929;
+}
+
+.rc{
+  margin :auto;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  align-items: center;
+  position: fixed;
+
+}
+
